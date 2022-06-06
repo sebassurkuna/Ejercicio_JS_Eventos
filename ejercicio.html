@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <style>
+        .body {
+            margin: 0px;
+            background-color: white;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+    <div id="Center container" class="container">
+        <style>
+            .container {
+                max-width: 600px;
+                width: 100%;
+                height: 500px;
+                border: 1px solid black;
+                margin: 0 auto;
+                margin-top: 50px;
+                background-color: gainsboro;
+            }
+
+            h2{
+                margin-left: 38%;
+                font-size: 35px;
+            }
+
+            label{
+                margin-left: 20%;
+            }
+
+            input{
+                margin-left: 20%;
+                height: 40px;
+                width: 60%;
+            }
+            p {
+                margin-left: 20%;
+                margin-top: 0px;
+                color: red;
+            }
+            button{
+                height: 50px;
+                width: 30%;
+                font-size: 20px;
+                margin-left: 35%;
+                background-color:yellow;
+                border-radius: 5%;
+                border:1px solid black;
+                margin-top: 20px;
+            }
+        </style>
+        <form id="form-register" action="https://www.youtube.com/" method="get">
+            <h2>Formato</h2>
+            <div id="input_container" class="input_container">
+                <label for="input_name">Nombre</label><br/>
+                <input id="Name" type="text" class="input" placeholder="Nombre:"/>
+                <p id="Error_name" class="input-error"></p>
+            </div>
+            <div class="input_container">
+                <label for="input_lastname">Apellido</label><br/>
+                <input id="Lastname" type="text" class="input" placeholder="Nombre:"/>
+                <p id="Error_lastname" class="input-error"></p>
+            </div>
+                <label for="input_ci">Cedula</label><br/>
+                <input id="CI" type="text" class="input" placeholder="Cedula:"/>
+                <p id="Error_ci" class="input-error"></p>
+            <div class="input_container">
+                <label for="input_email">Email</label><br/>
+                <input id="Email" type="text" class="input" placeholder="Email:"/>
+                <p id="Error_email" class="input-error"></p>
+            </div>
+            <div class="input_container"></div>
+                <button id="button" type="submit" class="button">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
